@@ -62,11 +62,14 @@ author:
   bio    : ""
   links:
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/earl-ranario-52171217b/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/eranario"
+    - label: "HuggingFace"
+      icon: "fas fa-fw fa-face-smile"
+      url: "https://huggingface.co/earlranario"
 
 defaults:
   # _posts
