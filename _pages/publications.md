@@ -6,8 +6,8 @@ category: Publications
 author_profile: true
 ---
 
+<!-- Publications Section -->
 <div class="publication-list">
-
   <article class="publication">
     <header class="publication-header">
       <h2 class="publication-title">
@@ -21,5 +21,24 @@ author_profile: true
       </p>
     </div>
   </article>
+  <!-- You can add more publication items here -->
+</div>
 
+<!-- Contributions Section -->
+<h1>Contributions</h1>
+<div class="contributions-list">
+  <article class="contribution">
+    <header class="contribution-header">
+      <h2 class="contribution-title">
+        <a href="/publications/AgRowStitch/">AgRowStitch: A High-fidelity Image Stitching Pipeline for Ground-based Agricultural Images</a>
+      </h2>
+      <p class="contribution-date">March 27, 2025</p>
+    </header>
+    <div class="contribution-excerpt">
+      <p>
+        Agricultural imaging often requires individual images to be stitched together into a final mosaic for analysis. However, agricultural images can be particularly challenging to stitch because feature matching across images is difficult...
+      </p>
+    </div>
+  </article>
+  <!-- Add additional contributions similarly -->
 </div>

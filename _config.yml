@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: ER
+email: ewranario@ucdavis.edu
 description: >- # this means to ignore newlines until "baseurl:"
   I work on developing AI-driven tools to accelerate plant phenotyping by combining advanced sensing technologies with machine learning. 
   My research focuses on improving plant trait identification using generative AI and enhancing model performance through synthetic data. 
