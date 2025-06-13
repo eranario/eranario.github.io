@@ -70,6 +70,9 @@ author:
     - label: "HuggingFace"
       icon: "fas fa-fw fa-face-smile"
       url: "https://huggingface.co/earlranario"
+    - label: GxExMINI App
+      icon: "fas fa-fw fa-seedling"
+      url: "https://gemini-breeding.github.io/"
 
 defaults:
   # _posts
