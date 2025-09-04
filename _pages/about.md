@@ -20,7 +20,9 @@ I work on developing AI-driven tools to accelerate plant phenotyping by combinin
 ## Awards & Honors
 
 - **AIFS Farm Robotics Challenge 2023:** [Elegance of Design](https://www.farmroboticschallenge.ai/2023)
-- **AIFS Research Fellow 2021-2022** 
+- **AIFS Research Fellow 2021-2022**
+- **ASABE Robotics Challenge 2018:** 2nd place beginners division
+- **ASABE Robotics Challenge 2025:** 3rd place advanced division
 
 ## Experience
 - **Undergraduate Student Researcher**  
