@@ -6,7 +6,7 @@ categories:
   - Publications
 ---
 
-Authors: Earl Ranario, Lars Lundqvist, Heesup Yun, Brian N. Bailey, J. Mason Earles
+Authors: Earl Ranario, J. Mason Earles
 
 Vision-language models (VLMs) are increasingly proposed as general-purpose solutions for visual recognition tasks, yet their reliability for agricultural decision support remains poorly understood. We benchmark a diverse set of open-source and closed-source VLMs on 27 agricultural image classification datasets from the AgML collection, spanning 162 classes and 248,000 images across plant disease, pest and damage, and plant and weed species identification. Overall, these results indicate that current off-the-shelf VLMs are not yet suitable as standalone agricultural diagnostic systems, but can function as assistive components when paired with constrained interfaces, explicit label ontologies, and domain-aware evaluation strategies.
 
