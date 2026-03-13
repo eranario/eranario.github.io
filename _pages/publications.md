@@ -11,6 +11,19 @@ author_profile: true
   <article class="publication">
     <header class="publication-header">
       <h2 class="publication-title">
+        <a href="/publications/VLMs-Agriculture/">Are vision-language models ready to zero-shot replace supervised classification models in agriculture?</a>
+      </h2>
+      <p class="publication-date">December 15, 2025</p>
+    </header>
+    <div class="publication-excerpt">
+      <p>
+        Vision-language models (VLMs) are increasingly proposed as general-purpose solutions for visual recognition tasks, yet their reliability for agricultural decision support remains poorly understood. We benchmark a diverse set of open-source and closed-source VLMs on 27 agricultural image classification datasets from the AgML collection...
+      </p>
+    </div>
+  </article>
+  <article class="publication">
+    <header class="publication-header">
+      <h2 class="publication-title">
         <a href="/publications/AGILE/">AGILE: A Diffusion-Based Attention-Guided Image and Label Translation for Efficient Cross-Domain Plant Trait Identification</a>
       </h2>
       <p class="publication-date">March 31, 2025</p>
