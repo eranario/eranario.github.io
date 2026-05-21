@@ -1,83 +1,34 @@
 ---
 title: "Publications"
 permalink: /publications/
-layout: archive
-category: Publications
+layout: single
 author_profile: true
 ---
 
-<!-- Publications Section -->
-<div class="publication-list">
-  <article class="publication">
-    <header class="publication-header">
-      <h2 class="publication-title">
-        <a href="/publications/VLMs-Agriculture/">Are vision-language models ready to zero-shot replace supervised classification models in agriculture?</a>
-      </h2>
-      <p class="publication-date">December 15, 2025</p>
-    </header>
-    <div class="publication-excerpt">
-      <p>
-        Vision-language models (VLMs) are increasingly proposed as general-purpose solutions for visual recognition tasks, yet their reliability for agricultural decision support remains poorly understood. We benchmark a diverse set of open-source and closed-source VLMs on 27 agricultural image classification datasets from the AgML collection...
-      </p>
-    </div>
-  </article>
-  <article class="publication">
-    <header class="publication-header">
-      <h2 class="publication-title">
-        <a href="/publications/AGILE/">AGILE: A Diffusion-Based Attention-Guided Image and Label Translation for Efficient Cross-Domain Plant Trait Identification</a>
-      </h2>
-      <p class="publication-date">March 31, 2025</p>
-    </header>
-    <div class="publication-excerpt">
-      <p>
-        Semantically consistent cross-domain image translation facilitates the generation of training data by transferring labels across different domains. However, existing generative models struggle with object-level accuracy when translating images between domains...
-      </p>
-    </div>
-  </article>
-  <article class="publication">
-    <header class="publication-header">
-      <h2 class="publication-title">
-        <a href="/publications/WeedSegment/">Enabling Plant Phenotyping in Weedy Environments using Multi-Modal Imagery via Synthetic and Generated Training Data</a>
-      </h2>
-      <p class="publication-date">September 23, 2025</p>
-    </header>
-    <div class="publication-excerpt">
-      <p>
-        Accurate plant segmentation in thermal imagery remains a significant challenge for high throughput field phenotyping, particularly in outdoor environments where low contrast between plants and weeds and frequent occlusions hinder performance...
-      </p>
-    </div>
-  </article>
-  <!-- You can add more publication items here -->
-</div>
+## First Author
 
-<!-- Contributions Section -->
-<h1>Contributions</h1>
-<div class="contributions-list">
-  <article class="contribution">
-    <header class="contribution-header">
-      <h2 class="contribution-title">
-        <a href="/publications/AgRowStitch/">AgRowStitch: A High-fidelity Image Stitching Pipeline for Ground-based Agricultural Images</a>
-      </h2>
-      <p class="contribution-date">March 27, 2025</p>
-    </header>
-    <div class="contribution-excerpt">
-      <p>
-        Agricultural imaging often requires individual images to be stitched together into a final mosaic for analysis. However, agricultural images can be particularly challenging to stitch because feature matching across images is difficult...
-      </p>
-    </div>
-  </article>
-  <article class="contribution">
-    <header class="contribution-header">
-      <h2 class="contribution-title">
-        <a href="/publications/Integration/">Integration of crop modeling and sensing into molecular breeding for nutritional quality and stress tolerance</a>
-      </h2>
-      <p class="contribution-date">August 08, 2025</p>
-    </header>
-    <div class="contribution-excerpt">
-      <p>
-        Integrating innovative technologies into plant breeding is critical to bolster food and nutritional security under biotic and abiotic stresses in changing climates...
-      </p>
-    </div>
-  </article>
-  <!-- Add additional contributions similarly -->
-</div>
+- [Thermal Image Segmentation in Weedy Fields via Synthetic RGB-Trained Models and GAN-Based Cross-Modality Alignment](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:W7OEmFMy1HYC)
+
+- [Are vision-language models ready to zero-shot replace supervised classification models in agriculture?](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:IjCSPb-OGe4C)
+
+- [AGILE: A Diffusion-Based Attention-Guided Image and Label Translation for Efficient Cross-Domain Plant Trait Identification](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:u5HHmVD_uO8C)
+
+---
+
+## Contributed To
+
+- [Does Your VFM Speak Plant? The Botanical Grammar of Vision Foundation Models for Object Detection](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:Y0pCki6q_DkC)
+
+- [A Vision Language Model for Generating Procedural Plant Architecture Representations from Simulated Images](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:Tyk-4Ss8FVUC)
+
+- [Using Vision Language Foundation Models to Generate Plant Simulation Configurations via In-Context Learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:zYLM7Y9cAGgC)
+
+- [Integration of crop modeling and sensing into molecular breeding for nutritional quality and stress tolerance](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:9yKSN-GCB0IC)
+
+- [AgRowStitch: A High-fidelity Image Stitching Pipeline for Ground-based Agricultural Images](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:u-x6o8ySG0sC)
+
+- [Architectural Phenotype Measurements Utilizing High Throughput Phenotyping in Solanaceae Varieties](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:qjMakFHDy7sC)
+
+- [Volume Estimation Through High Throughput Phenotyping](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:2osOgNQ5qMEC)
+
+- [A Vision Language Model for Generating XML-based Organ-level Plant Architecture Representations of Cowpea from Simulated Images](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:YsMSGLbcyi4C)
