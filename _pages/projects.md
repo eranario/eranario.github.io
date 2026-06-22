@@ -16,9 +16,8 @@ author_profile: true
       <p class="project-date">January 1, 2024</p>
     </header>
     <div class="project-excerpt">
-      <p>
-        RGB imaging is widely used but needs more depth of information than multispectral cameras provide in capturing critical infrared data that can be used to analyze plant health and other factors. Because of how expensive these multispectral cameras are...
-      </p>
+      <p><em>A transformer-based UNet framework that reconstructs multispectral bands from standard RGB images using spectral signal conditioning, enabling cost-effective plant health analysis without dedicated multispectral cameras.</em></p>
+      <img src="/assets/Multispec/method.png" width="600" style="display:block; margin-top:8px;">
     </div>
   </article>
   <!-- You can add more publication items here -->

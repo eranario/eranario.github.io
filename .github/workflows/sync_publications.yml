@@ -1,0 +1,32 @@
+name: Sync Publications
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # every Monday at 6am UTC
+  workflow_dispatch:      # allow manual trigger from GitHub UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run sync script
+        run: python3 scripts/sync_publications.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet || (git add _pages/publications.md && git commit -m "auto update with google scholar")
+          git push

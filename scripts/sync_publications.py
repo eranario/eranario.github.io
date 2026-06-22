@@ -27,6 +27,22 @@ HEADERS = {
     )
 }
 
+# Keyed by Scholar citation ID (the part after citation_for_view=SCHOLAR_USER:)
+PAPER_SUPPLEMENTS = {
+    "W7OEmFMy1HYC": {
+        "summary": "Combining synthetic training data with limited real annotations and GAN-based RGB-to-thermal translation significantly improves semantic segmentation of crops and weeds in complex field environments.",
+        "image": "/assets/weed_segment/teaser.png",
+    },
+    "IjCSPb-OGe4C": {
+        "summary": "Benchmarking diverse VLMs on 27 agricultural datasets reveals that current off-the-shelf models are not yet suitable as standalone diagnostic systems but can serve as assistive components with constrained interfaces and domain-aware evaluation.",
+        "image": "/assets/vlms_agriculture/teaser.png",
+    },
+    "u5HHmVD_uO8C": {
+        "summary": "AGILE uses optimized text embeddings and attention-guided diffusion to achieve semantically consistent cross-domain image and label translation for plant trait identification.",
+        "image": "/assets/AGILE/teaser.png",
+    },
+}
+
 
 def fetch_profile():
     url = f"{BASE_URL}/citations?user={SCHOLAR_USER}&hl=en&sortby=pubdate&pagesize=100"
@@ -45,7 +61,28 @@ def parse_papers(html):
         title = title_el.get_text(strip=True)
         href = title_el.get("href", "")
         url = (BASE_URL + href) if href.startswith("/") else href
-        papers.append({"title": title, "url": url})
+
+        # Extract citation ID from href
+        cit_id = ""
+        if "citation_for_view=" in href:
+            cit_id = href.split("citation_for_view=")[-1].split(":")[1]
+
+        # Citation count
+        cite_el = row.select_one("td.gsc_a_c a")
+        citations = cite_el.get_text(strip=True) if cite_el else "0"
+        citations = citations if citations.isdigit() else "0"
+
+        # Year
+        year_el = row.select_one("td.gsc_a_y span")
+        year = year_el.get_text(strip=True) if year_el else ""
+
+        papers.append({
+            "title": title,
+            "url": url,
+            "cit_id": cit_id,
+            "citations": citations,
+            "year": year,
+        })
     return papers
 
 
@@ -76,6 +113,30 @@ def is_first_author(first_author_str):
     return all(part in first_author_str for part in name_parts)
 
 
+def paper_entry(p):
+    cit_id = p.get("cit_id", "")
+    year = p.get("year", "")
+    citations = p.get("citations", "0")
+    supp = PAPER_SUPPLEMENTS.get(cit_id, {})
+
+    meta = []
+    if year:
+        meta.append(year)
+    meta.append(f"{citations} citation{'s' if citations != '1' else ''}")
+    meta_str = " · ".join(meta)
+
+    lines = [f"- [{p['title']}]({p['url']})  "]
+    lines.append(f"  <small>{meta_str}</small>")
+
+    if supp.get("summary"):
+        lines.append(f"  *{supp['summary']}*  ")
+    if supp.get("image"):
+        lines.append(f"  <img src=\"{supp['image']}\" width=\"600\" style=\"display:block; margin-top:8px;\">")
+
+    lines.append("")
+    return "\n".join(lines)
+
+
 def build_markdown(first_author_papers, contributed_papers):
     lines = [
         "---",
@@ -89,13 +150,11 @@ def build_markdown(first_author_papers, contributed_papers):
         "",
     ]
     for p in first_author_papers:
-        lines.append(f"- [{p['title']}]({p['url']})")
-        lines.append("")
+        lines.append(paper_entry(p))
 
     lines += ["---", "", "## Contributed To", ""]
     for p in contributed_papers:
-        lines.append(f"- [{p['title']}]({p['url']})")
-        lines.append("")
+        lines.append(paper_entry(p))
 
     return "\n".join(lines)
 
