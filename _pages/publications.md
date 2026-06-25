@@ -29,23 +29,17 @@ author_profile: true
 - [A vision language model for generating XML-based organ-level plant architecture representations of cowpea from simulated images](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:YsMSGLbcyi4C)  
   <small>2026 · 0 citations</small>
 
-- [A Vision Language Model for Generating Procedural Plant Architecture Representations from Simulated Images](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:Tyk-4Ss8FVUC)  
-  <small>2026 · 0 citations</small>
-
 - [Using Vision Language Foundation Models to Generate Plant Simulation Configurations via In-Context Learning](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:zYLM7Y9cAGgC)  
   <small>2026 · 0 citations</small>
 
 - [AgRowStitch: A Leaf-Scale Image Stitching Pipeline for Ground-Based Agricultural Images](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:eQOLeE2rZwMC)  
-  <small>2026 · 0 citations</small>
+  <small>2026 · 1 citation</small>
 
 - [Does Your VFM Speak Plant? The Botanical Grammar of Vision Foundation Models for Object Detection](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:Y0pCki6q_DkC)  
   <small>2026 · 1 citation</small>
 
 - [Integration of crop modeling and sensing into molecular breeding for nutritional quality and stress tolerance](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:9yKSN-GCB0IC)  
   <small>2025 · 6 citations</small>
-
-- [AgRowStitch: A High-fidelity Image Stitching Pipeline for Ground-based Agricultural Images](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:u-x6o8ySG0sC)  
-  <small>2025 · 1 citation</small>
 
 - [Architectural Phenotype Measurements Utilizing High Throughput Phenotyping in Solanaceae Varieties](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:qjMakFHDy7sC)  
   <small>2022 · 0 citations</small>
