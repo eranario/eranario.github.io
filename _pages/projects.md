@@ -23,6 +23,18 @@ author_profile: true
   <article class="projects">
     <header class="project-header">
       <h2 class="project-title">
+        <a href="/projects/FloweringTime/">Modeling the Effects of Accumulative Photosynthesis on Flowering Time Across Diverse Environments</a>
+      </h2>
+      <p class="project-date">January 1, 2025</p>
+    </header>
+    <div class="project-excerpt">
+      <p><em>FvCB-based cumulative photosynthesis model for predicting cowpea flowering time that outperforms the Growing Degree-Days baseline when validated across geographically distinct environments.</em></p>
+      <img src="/assets/flowering_time/light_temp_integral.png" width="600" style="display:block; margin-top:8px;">
+    </div>
+  </article>
+  <article class="projects">
+    <header class="project-header">
+      <h2 class="project-title">
         <a href="/projects/Multispec/">Proof of Concept: RGB to Multispectral Reconstruction using Transformer-Based Spectral Conditioning</a>
       </h2>
       <p class="project-date">January 1, 2024</p>

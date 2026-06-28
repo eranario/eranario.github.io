@@ -17,13 +17,6 @@ I work on developing AI-driven tools to accelerate plant phenotyping by combinin
 **Dissertation:** TBD \
 **Advisor:** Dr. Mason Earles
 
-## Awards & Honors
-
-- **AIFS Farm Robotics Challenge 2023:** [Elegance of Design](https://www.farmroboticschallenge.ai/2023)
-- **AIFS Research Fellow 2021-2022**
-- **ASABE Robotics Challenge 2018:** 2nd place beginners division
-- **ASABE Robotics Challenge 2025:** 3rd place advanced division
-
 ## Experience
 - **Undergraduate Student Researcher**  
   *UC Davis* | 2019 – 2021
@@ -31,3 +24,23 @@ I work on developing AI-driven tools to accelerate plant phenotyping by combinin
 - **Precision Phenotyping Intern**  
   *Corteva Agriscience* | 2021
   - Integrated autonomous navigation for robotics in an agricultural field for assisting in phenotyping corn in all stages.
+
+## Awards & Honors
+
+- **AIFS Farm Robotics Challenge 2023:** [Elegance of Design](https://www.farmroboticschallenge.ai/2023)
+- **AIFS Research Fellow 2021-2022**
+- **ASABE Robotics Challenge 2018:** 2nd place beginners division
+- **ASABE Robotics Challenge 2025:** 3rd place advanced division
+
+## Leadership, Outreach & Volunteer
+
+### Leadership
+- **Robotics Judge** — [AIFS Farm Robotics Challenge](https://aifs.ucdavis.edu/education-and-outreach/farm-robotics-challenge) | 2026
+- **President**, International Society for Pharmaceutical Engineers (UC Davis) | 2019 – 2022
+
+### Outreach
+- **Remote Sensing and GEMINI App Talk** — [SEED Central Networking Event](https://seedcentral.org/events/pastnetworkingevents.htm) | 2026
+
+### Volunteer
+- Participated in the ASABE K.K. Barnes Paper Competition to help organize the ABT class program | 2021
+- Traveled to Uganda and Tanzania to help deploy drones and rovers to accelerate plant breeding programs | 2024
