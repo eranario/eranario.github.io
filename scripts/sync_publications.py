@@ -163,6 +163,16 @@ def main():
     print("Fetching Scholar profile...")
     try:
         html = fetch_profile()
+    except requests.HTTPError as e:
+        if e.response is not None and e.response.status_code == 403:
+            print(
+                "Scholar returned 403 (rate-limited or blocked). "
+                "Skipping update — existing publications.md preserved.",
+                file=sys.stderr,
+            )
+            sys.exit(0)
+        print(f"Error fetching Scholar profile: {e}", file=sys.stderr)
+        sys.exit(1)
     except requests.RequestException as e:
         print(f"Error fetching Scholar profile: {e}", file=sys.stderr)
         sys.exit(1)
@@ -170,7 +180,7 @@ def main():
     papers = parse_papers(html)
     if not papers:
         print("No papers found — Scholar may have blocked the request.", file=sys.stderr)
-        sys.exit(1)
+        sys.exit(0)
 
     print(f"Found {len(papers)} papers. Checking author order...")
 
