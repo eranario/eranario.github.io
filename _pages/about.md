@@ -37,8 +37,10 @@ I work on developing AI-driven tools to accelerate plant phenotyping by combinin
 ### Leadership
 - **Robotics Judge** — [AIFS Farm Robotics Challenge](https://aifs.ucdavis.edu/education-and-outreach/farm-robotics-challenge) | 2026
 - **President**, International Society for Pharmaceutical Engineers (UC Davis) | 2019 – 2022
+- **Hackathon Mentor** — Tamil Nadu Agricultural University Fairgrounds Project | 2026 <small><a href="/assets/images/tnau_hackathon.jpeg" target="_blank">[photo]</a></small>
 
 ### Outreach
+- **AgAlert Article: Remote Sensing for Dry Beans** — [Researchers Share Latest Advancements in Dry Beans](https://www.agalert.com/california-ag-news/archives/october-8-2025/researchers-share-latest-advancements-in-dry-beans/) | 2025
 - **Remote Sensing and GEMINI App Talk** — [SEED Central Networking Event](https://seedcentral.org/events/pastnetworkingevents.htm) | 2026
 
 ### Volunteer
