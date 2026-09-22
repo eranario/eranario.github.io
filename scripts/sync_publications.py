@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 """
 Fetches publications from Google Scholar and regenerates _pages/publications.md.
-Splits into First Author vs Contributed To based on author order.
+Splits into First Author vs Contributed To based on FIRST_AUTHOR_IDS.
+
+To add a new first-author paper: add its citation ID (the part after
+citation_for_view=Zc7DhZMAAAAJ:) to FIRST_AUTHOR_IDS.
 
 Usage:
     pip install requests beautifulsoup4
     python3 scripts/sync_publications.py
 """
 
-import time
 import sys
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
 SCHOLAR_USER = "Zc7DhZMAAAAJ"
-AUTHOR_NAME = "Earl Ranario"
 BASE_URL = "https://scholar.google.com"
 OUTPUT_FILE = Path(__file__).parent.parent / "_pages" / "publications.md"
 
@@ -27,8 +28,20 @@ HEADERS = {
     )
 }
 
-# Keyed by Scholar citation ID (the part after citation_for_view=SCHOLAR_USER:)
+# Citation IDs for first-author papers (part after citation_for_view=SCHOLAR_USER:)
+# Add new first-author paper IDs here when they appear on Scholar.
+FIRST_AUTHOR_IDS = {
+    "_FxGoFyzp5QC",  # VLMs know more than they show (rubric-grounded verifications)
+    "W7OEmFMy1HYC",  # Thermal image segmentation (weed_segment)
+    "IjCSPb-OGe4C",  # Are VLMs ready to zero-shot replace supervised models?
+    "u5HHmVD_uO8C",  # AGILE
+}
+
+# Optional per-paper extras. Keyed by citation ID.
 PAPER_SUPPLEMENTS = {
+    "_FxGoFyzp5QC": {
+        "summary": "VLMs possess latent agricultural knowledge that standard prompting fails to surface; rubric-grounded verification unlocks this knowledge and substantially closes the gap with supervised models.",
+    },
     "W7OEmFMy1HYC": {
         "summary": "Combining synthetic training data with limited real annotations and GAN-based RGB-to-thermal translation significantly improves semantic segmentation of crops and weeds in complex field environments.",
         "image": "/assets/weed_segment/teaser.png",
@@ -36,10 +49,12 @@ PAPER_SUPPLEMENTS = {
     "IjCSPb-OGe4C": {
         "summary": "Benchmarking diverse VLMs on 27 agricultural datasets reveals that current off-the-shelf models are not yet suitable as standalone diagnostic systems but can serve as assistive components with constrained interfaces and domain-aware evaluation.",
         "image": "/assets/vlms_agriculture/teaser.png",
+        "project_page": "/publications/VLMs-Agriculture/",
     },
     "u5HHmVD_uO8C": {
         "summary": "AGILE uses optimized text embeddings and attention-guided diffusion to achieve semantically consistent cross-domain image and label translation for plant trait identification.",
         "image": "/assets/AGILE/teaser.png",
+        "project_page": "/publications/AGILE/",
     },
 }
 
@@ -86,33 +101,6 @@ def parse_papers(html):
     return papers
 
 
-def get_first_author(citation_url):
-    time.sleep(1.5)  # stay polite to Scholar
-    try:
-        resp = requests.get(citation_url, headers=HEADERS, timeout=15)
-        resp.raise_for_status()
-    except requests.RequestException as e:
-        print(f"  Warning: could not fetch {citation_url}: {e}", file=sys.stderr)
-        return None
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-    for row in soup.select("div.gs_scl"):
-        field = row.select_one("div.gsc_oci_field")
-        value = row.select_one("div.gsc_oci_value")
-        if field and value and "Authors" in field.get_text():
-            authors_raw = value.get_text(strip=True)
-            first = authors_raw.split(",")[0].strip().lower()
-            return first
-    return None
-
-
-def is_first_author(first_author_str):
-    if first_author_str is None:
-        return False
-    name_parts = AUTHOR_NAME.lower().split()
-    return all(part in first_author_str for part in name_parts)
-
-
 def paper_entry(p):
     cit_id = p.get("cit_id", "")
     year = p.get("year", "")
@@ -125,7 +113,8 @@ def paper_entry(p):
     meta.append(f"{citations} citation{'s' if citations != '1' else ''}")
     meta_str = " · ".join(meta)
 
-    lines = [f"- [{p['title']}]({p['url']})  "]
+    link_url = supp.get("project_page", p['url'])
+    lines = [f"- [{p['title']}]({link_url})  "]
     lines.append(f"  <small>{meta_str}</small>")
 
     if supp.get("summary"):
@@ -182,18 +171,16 @@ def main():
         print("No papers found — Scholar may have blocked the request.", file=sys.stderr)
         sys.exit(0)
 
-    print(f"Found {len(papers)} papers. Checking author order...")
+    print(f"Found {len(papers)} papers. Splitting by author order...")
 
     first_author, contributed = [], []
-    for i, paper in enumerate(papers, 1):
-        print(f"  [{i}/{len(papers)}] {paper['title'][:70]}...")
-        first = get_first_author(paper["url"])
-        if is_first_author(first):
+    for paper in papers:
+        if paper["cit_id"] in FIRST_AUTHOR_IDS:
             first_author.append(paper)
         else:
             contributed.append(paper)
 
-    print(f"\nFirst author: {len(first_author)} | Contributed: {len(contributed)}")
+    print(f"First author: {len(first_author)} | Contributed: {len(contributed)}")
 
     md = build_markdown(first_author, contributed)
     OUTPUT_FILE.write_text(md)

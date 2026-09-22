@@ -9,18 +9,19 @@ author_profile: true
 
 - [Vision-language models know more about agriculture than they show and rubric-grounded verifications close the gap](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:_FxGoFyzp5QC)  
   <small>2026 · 0 citations</small>
+  *VLMs possess latent agricultural knowledge that standard prompting fails to surface; rubric-grounded verification unlocks this knowledge and substantially closes the gap with supervised models.*  
 
 - [Thermal image segmentation in weedy fields via synthetic RGB-trained models and GAN-based cross-modality alignment](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:W7OEmFMy1HYC)  
   <small>2026 · 2 citations</small>
   *Combining synthetic training data with limited real annotations and GAN-based RGB-to-thermal translation significantly improves semantic segmentation of crops and weeds in complex field environments.*  
   <img src="/assets/weed_segment/teaser.png" width="600" style="display:block; margin-top:8px;">
 
-- [Are vision-language models ready to zero-shot replace supervised classification models in agriculture?](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:IjCSPb-OGe4C)  
+- [Are vision-language models ready to zero-shot replace supervised classification models in agriculture?](/publications/VLMs-Agriculture/)  
   <small>2025 · 7 citations</small>
   *Benchmarking diverse VLMs on 27 agricultural datasets reveals that current off-the-shelf models are not yet suitable as standalone diagnostic systems but can serve as assistive components with constrained interfaces and domain-aware evaluation.*  
   <img src="/assets/vlms_agriculture/teaser.png" width="600" style="display:block; margin-top:8px;">
 
-- [AGILE: A diffusion-based attention-guided image and label translation for efficient cross-domain plant trait identification](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:u5HHmVD_uO8C)  
+- [AGILE: A diffusion-based attention-guided image and label translation for efficient cross-domain plant trait identification](/publications/AGILE/)  
   <small>2025 · 6 citations</small>
   *AGILE uses optimized text embeddings and attention-guided diffusion to achieve semantically consistent cross-domain image and label translation for plant trait identification.*  
   <img src="/assets/AGILE/teaser.png" width="600" style="display:block; margin-top:8px;">

@@ -2,6 +2,7 @@
 title: "Are vision-language models ready to zero-shot replace supervised classification models in agriculture?"
 layout: single
 excerpt_separator: "<!--more-->"
+permalink: /publications/VLMs-Agriculture/
 categories:
   - Publications
 ---

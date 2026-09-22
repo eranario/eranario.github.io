@@ -67,10 +67,7 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/eranario"
-    - label: "HuggingFace"
-      icon: "fas fa-fw fa-face-smile"
-      url: "https://huggingface.co/earlranario"
-    - label: GxExMINI App
+    - label: GEMI
       icon: "fas fa-fw fa-seedling"
       url: "https://gemini-breeding.github.io/"
 
