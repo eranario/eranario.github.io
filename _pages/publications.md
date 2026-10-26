@@ -7,7 +7,7 @@ author_profile: true
 
 ## First Author
 
-- [Vision-language models know more about agriculture than they show and rubric-grounded verifications close the gap](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:_FxGoFyzp5QC)  
+- [Vision-language models see more about agriculture than they report, and test-time scaling remains bounded by parametric knowledge](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Zc7DhZMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Zc7DhZMAAAAJ:_FxGoFyzp5QC)  
   <small>2026 · 0 citations</small>
   *VLMs possess latent agricultural knowledge that standard prompting fails to surface; rubric-grounded verification unlocks this knowledge and substantially closes the gap with supervised models.*  
 
